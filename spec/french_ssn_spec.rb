@@ -6,4 +6,10 @@ describe "#french_ssn_info" do
     expected = "The number is invalid"
     expect(actual).to eq(expected)
   end
+
+  it "returns a valid description of a person via ssn" do
+    actual = french_ssn_info("1 84 12 76 451 089 46")
+    expected = "a man, born in December, 1984 in Seine-Maritime."
+    expect(actual).to eq(expected)
+  end
 end
