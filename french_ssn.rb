@@ -26,5 +26,5 @@ def french_ssn_info(ssn)
   return "a #{gender}, born in #{month}, 19#{match_data[:yob]} in #{dept}."
 end
 
-p french_ssn_info("1 84 12 76 451 089 46")
+p french_ssn_info("284083145108946")
 # "a man, born in December, 1984 in Seine-Maritime."
